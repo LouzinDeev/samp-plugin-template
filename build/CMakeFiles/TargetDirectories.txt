@@ -1,0 +1,5 @@
+/home/louzin/louzinlab/SA-MP/plugin-template/build/CMakeFiles/edit_cache.dir
+/home/louzin/louzinlab/SA-MP/plugin-template/build/CMakeFiles/rebuild_cache.dir
+/home/louzin/louzinlab/SA-MP/plugin-template/build/Plugin/CMakeFiles/Plugin.dir
+/home/louzin/louzinlab/SA-MP/plugin-template/build/Plugin/CMakeFiles/edit_cache.dir
+/home/louzin/louzinlab/SA-MP/plugin-template/build/Plugin/CMakeFiles/rebuild_cache.dir
