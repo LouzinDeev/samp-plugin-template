@@ -1,0 +1,58 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:24:42] 
+[23:24:42] Server Plugins
+[23:24:42] --------------
+[23:24:42]  Loading plugin: Plugin.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:34:18] 
+[23:34:18] Server Plugins
+[23:34:18] --------------
+[23:34:18]  Loading plugin: Plugin.dll
+[23:34:18] * Plugin loaded
+[23:34:18]   Loaded.
+[23:34:18]  Loading plugin: sscanf.dll
+[23:34:18] 
+[23:34:18]  ===============================
+[23:34:18] 
+[23:34:18]       sscanf plugin loaded.     
+[23:34:18] 
+[23:34:18]          Version: 2.13.8
+[23:34:18] 
+[23:34:18]    (c) 2022 Alex "Y_Less" Cole  
+[23:34:18] 
+[23:34:18]  ===============================
+[23:34:18] 
+[23:34:18]   Loaded.
+[23:34:18]  Loaded 2 plugins.
+
+[23:34:18] 
+[23:34:18] Filterscripts
+[23:34:18] ---------------
+[23:34:18]   Loaded 0 filterscripts.
+
+[23:34:18] Hello world!!!
+
+[23:34:18] Number of vehicle models: 0
+[23:34:40] [connection] 127.0.0.1:58868 requests connection cookie.
+[23:34:41] [connection] incoming connection: 127.0.0.1:58868 id: 0
+[23:34:41] [join] Louzin has joined the server (0:127.0.0.1)
+[23:34:51] 22
+[23:35:01] 0
+[23:35:11] 33
+[23:35:18] [part] Louzin has left the server (0:1)

@@ -30,8 +30,8 @@
  *  SA:MP Team past, present and future
  */
 
-#ifndef YSF_STRUCTS_H
-#define YSF_STRUCTS_H
+#ifndef _STRUCTS_H_
+#define _STRUCTS_H_
 
 #include "common.h"
 #include "CVector.h"
@@ -137,6 +137,7 @@ enum CON_VARTYPE { CON_VARTYPE_FLOAT, CON_VARTYPE_INT, CON_VARTYPE_BOOL, CON_VAR
 
 typedef void(*VARCHANGEFUNC)();
 
+#pragma pack(push, 1)
 struct ConsoleVariable_s
 {
 	CON_VARTYPE VarType;
@@ -871,6 +872,7 @@ class CNetGame
 		int						iSpawnsAvailable;		// 130 - 134
 		CPlayerSpawnInfo		AvailableSpawns[300];	// 129 - 13929
 };
+#pragma pack(pop)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 struct PlayerID

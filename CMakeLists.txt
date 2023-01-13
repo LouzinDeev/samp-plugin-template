@@ -9,7 +9,7 @@ set(SDK "${CMAKE_SOURCE_DIR}/Plugin/Deps/sdk")
 set(GDK "${CMAKE_SOURCE_DIR}/Plugin/Deps/sampgdk")
 set(RAKNET "${CMAKE_SOURCE_DIR}/Plugin/Deps/raknet")
 
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/test/plugins)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/sampsvr/plugins)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
