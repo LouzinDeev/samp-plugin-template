@@ -4,12 +4,10 @@
 */
 
 #include "common.h"
-#include "structs.h"
 
 logprintf_t logprintf;
 RakServer* pRakServer;
 CNetGame* pNetGame;
-AMX* pGameModeAmx;
 void** ppPluginData;
 
 PLUGIN_EXPORT unsigned int PLUGIN_CALL Supports() {
@@ -25,14 +23,14 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void** ppData) {
 }
 
 PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx) {
-    static bool firstLoad = false;
-    pGameModeAmx = amx;
-    if(!firstLoad) {
-        int(*pnf_GetNetGame)(void) = (int(*)(void))ppPluginData[PLUGIN_DATA_NETGAME];
-        pNetGame = reinterpret_cast<CNetGame*>(pnf_GetNetGame());
+    static bool rakserver = false;
+    if (!rakserver) {
+        rakserver = true;
+        int(*pfn_GetRakServer)(void) = (int(*)(void))ppPluginData[PLUGIN_DATA_RAKSERVER];
+        pRakServer = reinterpret_cast<RakServer*>(pfn_GetRakServer());
 
-        int(*pnf_GetRakServer)(void) = (int(*)(void))ppPluginData[PLUGIN_DATA_RAKSERVER];
-        pRakServer = reinterpret_cast<RakServer*>(pnf_GetRakServer);
+        int(*pfn_GetNetGame)(void) = (int(*)(void))ppPluginData[PLUGIN_DATA_NETGAME];
+        pNetGame = reinterpret_cast<CNetGame*>(pfn_GetNetGame());
     }
     return amx_Register(amx, Natives::native_list, -1);
 }

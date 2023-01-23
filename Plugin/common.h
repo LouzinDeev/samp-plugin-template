@@ -18,9 +18,8 @@
 #include "structs.h"
 #include "Natives.h"
 
-extern RakServer* pRakServer;
-extern CNetGame* pNetGame;
-extern AMX* pGameModeAmx;
+extern class RakServer* pRakServer;
+extern class CNetGame* pNetGame;
 extern void** ppPluginData;
 extern void* pAMXFunctions;
 extern logprintf_t logprintf;
